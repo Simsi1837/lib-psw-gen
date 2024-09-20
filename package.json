@@ -1,0 +1,23 @@
+{
+  "name": "password-generator",
+  "version": "0.0.1",
+  "description": "Password Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simsi1837/password-generator.git"
+  },
+  "keywords": [
+    "password",
+    "password-generator"
+  ],
+  "author": "Simon Wageneder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simsi1837/password-generator/issues"
+  },
+  "homepage": "https://github.com/Simsi1837/password-generator#readme"
+}
