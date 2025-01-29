@@ -1,0 +1,48 @@
+# Ignoriere node_modules
+node_modules/
+
+# Ignoriere Umgebungsvariablen-Dateien
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignoriere Log-Dateien
+*.log
+logs/
+
+# Ignoriere IDE-spezifische Dateien
+.vscode/
+.idea/
+
+# Ignoriere npm- und yarn-Cache
+.npm
+.yarn
+.yarnrc
+.pnpm-store/
+
+# Ignoriere Build- und Dist-Ordner
+dist/
+build/
+out/
+
+# Ignoriere Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Ignoriere Testabdeckungsberichte
+coverage/
+.nyc_output/
+
+# Ignoriere Lockfiles (optional, je nach Projekt)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignoriere temporäre Dateien
+*.tmp
+*.temp
+
+# Ignoriere Debug-Dateien
+*.debug
