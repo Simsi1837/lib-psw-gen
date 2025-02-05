@@ -6,7 +6,7 @@ const generatePassword = (options = {}) => {
     uppercase = true,
     lowercase = true,
     numbers = true,
-    symbols = false,
+    symbols = true,
     excludeSimilar = false
   } = options;
 
@@ -43,8 +43,8 @@ const generatePassword = (options = {}) => {
   if (numbers) requiredChars.push(numberChars);
   if (symbols) requiredChars.push(symbolChars);
 
-  for (const chars of requiredChars) {
-    password += chars[crypto.randomInt(chars.length)];
+  for (let i = password.length; i < length; i++) {
+    password += charset[crypto.randomInt(charsetLength)];
   }
 
   // Fill the rest of the password with random characters from the charset
@@ -53,7 +53,7 @@ const generatePassword = (options = {}) => {
   }
 
   // Shuffle the password to ensure randomness
-  password = password.split('').sort(() => 0.5 - Math.random()).join('');
+  password = password.split('').sort(() => 0.5 - Math.random()).join('').slice(0, length);
 
   return password;
 };
