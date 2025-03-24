@@ -51,6 +51,3 @@ console.log(strength);
 // Output: { score: 3, strength: "Strong" }
 ```
 
-## License
-This package is open-source and available under the MIT license.
-
