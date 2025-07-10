@@ -1,4 +1,4 @@
-# @simsi1837/password-generator 🔐
+# @simsi1837/lib-psw-gen 🔐
 
 A simple and lightweight password generator that creates secure, customizable passwords containing lowercase letters, uppercase letters, numbers, and symbols.
 
